@@ -1,5 +1,13 @@
 <?php
-$lista1 = [1, 2, 3, 4, 5, 6];
-$lista2 = [8, 9, 10];
-$lista3 = [...$lista1, 'alguma coisa', ...$lista2];
-echo implode(", ", $lista3);
+$nome = 'Matheus';
+$idade = 27;
+$forca = 60;
+$agilidade = 80;
+$destreza = 50;
+$vida = 1000;
+$mana = 928;
+
+$lista = [$nome, $idade, $forca, $agilidade, $destreza];
+$atributos = [$forca, $agilidade, $destreza, $mana];
+
+echo 'meu nome é ' . $nome; // Imprime apenas o valor da variável $nome
