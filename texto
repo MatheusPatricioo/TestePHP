@@ -4,3 +4,5 @@ Manda pro local correto
 Chama o PHP pra interpretar o código PHP
 o PHP manda o resultado para o Apache
 O apache junta com o que não é interpretável ( ou seja, nesse caso é o hello word) e manda pro usuário.
+
+obs: o servidor sempre vai procurar o arquivo INDEX primeiro. 
