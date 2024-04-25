@@ -8,6 +8,11 @@ $ingredientes = [
 ];
 
 // Usando implode com "\n" como delimitador para quebrar cada ingrediente em uma linha separada
-echo implode("\n", $ingredientes);
+echo '<h2>Ingredientes</h2>';
 
-foreach()
+foreach($ingredientes as $ingre) {
+    echo "Item: ".$ingre."<br/>";
+}
+
+echo "testando puxar uma posição : ".$ingredientes[1]."<br/>"; // Correção aqui
+?>
