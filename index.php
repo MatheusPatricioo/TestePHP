@@ -1,18 +1,29 @@
 <?php
-$ingredientes = [
-    'açucar',
-    'farinho de trigo',
-    'ovo',
-    'leite',
-    'fermento em pó',
-];
+//$array = ['----------','----------','----------','----------','----------','----------',
+//'----------','----------','----------','----------', ];
 
-// Usando implode com "\n" como delimitador para quebrar cada ingrediente em uma linha separada
-echo '<h2>Ingredientes</h2>';
+//foreach ($array as $key) {
+ //   echo " ".$key."<br/>";
+//};
 
-foreach($ingredientes as $ingre) {
-    echo "Item: ".$ingre."<br/>";
+//for ($j = 0; $j < 10; $j++) {
+    //for ($i = 0; $i < 10; $i++) {
+      //  echo " - ";
+    //}
+  //  echo '</br>';
+//}
+//for ($j = 0; $j < 10; $j++) {
+  //  echo str_repeat(" - ", 10) . "</br>";
+//}
+
+
+for ($i = 0; $i < 10; $i++) {
+    for ($j = 0; $j < 10; $j++) {
+        echo " - ";
+        for ($k = 0; $k < 10; $k++) {
+            echo "0";
+    }
+    echo "<br/>";
+    }
 }
 
-echo "testando puxar uma posição : ".$ingredientes[1]."<br/>"; // Correção aqui
-?>
