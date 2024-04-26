@@ -14,5 +14,5 @@ foreach($ingredientes as $ingre) {
     echo "Item: ".$ingre."<br/>";
 }
 
-echo "testando puxar uma posição : ".$ingredientes[1]."<br/>"; // Correção aqui
+echo "testando puxar uma posiçãoooo : ".$ingredientes[1]."<br/>"; // Correção aqui
 ?>
