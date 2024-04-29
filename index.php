@@ -1,11 +1,11 @@
 <?php
-function recursividade($a, $b, $contador){
+function recursividade($a, $b){
     $recurs = $a / $b;
-    $contador--;
-    echo $recurs."<br/>";
-    if($contador > 0){
-        recursividade($recurs, $b, $contador);
+
+    echo (round($recurs))."<br/>";
+    if(round($recurs) > 0){
+        recursividade($recurs, $b);
     }
 }
 
-recursividade(20, 2, 100);
+recursividade(500, 2);
