@@ -1,0 +1,46 @@
+section .text
+    global _start
+
+_start:
+    ; Chama a função recursiva
+    mov eax, 2          ; Define o valor de $a
+    mov ebx, 5          ; Define o valor de $b
+    mov ecx, 10         ; Define o valor do contador
+    call recursividade  ; Chama a função recursiva
+
+    ; Termina o programa
+    mov eax, 1          ; Número da interrupção de sistema para a chamada `sys_exit`
+    xor ebx, ebx        ; Código de saída 0 (sem erros)
+    int 0x80            ; Chama a interrupção de sistema
+
+recursividade:
+    ; Argumentos:
+    ; EAX = $a
+    ; EBX = $b
+    ; ECX = $contador
+
+    ; Subtrai 1 do contador
+    dec ecx
+
+    ; Divide $a por $b
+    mov edx, 0          ; Zera o registro DX
+    div ebx             ; Divide EAX (=$a) por EBX (=$b)
+
+    ; Imprime o resultado
+    ; Usando a interrupção de sistema sys_write
+    mov eax, 4          ; Número da interrupção de sistema para a chamada `sys_write`
+    mov ebx, 1          ; Descritor de arquivo padrão (stdout)
+    mov ecx, eax        ; Move o resultado (quociente) para ECX
+    add ecx, '0'        ; Converte o valor numérico para caractere
+    mov edx, 1          ; Tamanho da string (1 caractere)
+    int 0x80            ; Chama a interrupção de sistema
+
+    ; Pula para o final da função se o contador for zero ou menos
+    cmp ecx, 0
+    jle end_recursividade
+
+    ; Chama recursividade novamente
+    call recursividade
+
+end_recursividade:
+    ret
