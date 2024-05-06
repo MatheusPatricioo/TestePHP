@@ -13,6 +13,22 @@ require_once('header.php'); // Inclui o arquivo 'header.php', que pode conter co
     <br />
 
     <label>
+        Idade:
+        <br/>
+        <input type="idade" name="idade" /> <!-- Campo de entrada para a idade do usuário -->
+    </label>
+    <br />
+    <br />
+
+    <label>
+        Email:
+        <br/>
+        <input type="email" name="email" /> <!-- Campo de entrada para o email do usuário -->
+    </label>
+    <br />
+    <br />
+
+    <label>
         Senha:
         <br />
         <input type="password" name="senha" /> <!-- Campo de entrada para a senha do usuário (tipo password para ocultar os caracteres) -->
