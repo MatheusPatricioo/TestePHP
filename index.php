@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 require_once('header.php');
 ?>
 
@@ -23,3 +24,12 @@ require_once('header.php');
     <input type="submit" value="Enviar" /> 
 
 </form>
+=======
+require('config.php');
+require('header.php');
+
+
+echo 'Conteudo do site...<br/>';
+
+echo "NOME DE USUARIO: ".$usuario;
+>>>>>>> f02553a731630ba5b16ffcd3cdb4fd8dfe177522
