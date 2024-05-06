@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
 <?php
 session_start();
 require('header.php'); // Inclui o arquivo 'header.php', que pode conter configurações ou outros códigos necessários
@@ -9,42 +19,25 @@ if(isset($_SESSION['aviso'])) {
 }
 ?>
 
+<div class="container">
+    <h2>Formulário</h2>
 
+    <form method="POST" action="recebedor.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
 
-<form method="POST" action="recebedor.php"> <!-- Formulário com método de envio POST e ação para 'recebedor.php' -->
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade">
 
-    <label>
-        Nome:
-        <br/>
-        <input type="text" name="nome" /> <!-- Campo de entrada para o nome do usuário -->
-    </label>
-    <br />
-    <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label>
-        Idade:
-        <br/>
-        <input type="idade" name="idade" /> <!-- Campo de entrada para a idade do usuário -->
-    </label>
-    <br />
-    <br />
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
 
-    <label>
-        Email:
-        <br/>
-        <input type="email" name="email" /> <!-- Campo de entrada para o email do usuário -->
-    </label>
-    <br />
-    <br />
+        <input type="submit" value="Enviar">
+    </form>
+</div>
 
-    <label>
-        Senha:
-        <br />
-        <input type="password" name="senha" /> <!-- Campo de entrada para a senha do usuário (tipo password para ocultar os caracteres) -->
-    </label>
-    <br />
-    <br />
-
-    <input type="submit" value="Enviar" /> <!-- Botão de envio do formulário -->
-
-</form>
+</body>
+</html>

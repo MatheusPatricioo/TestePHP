@@ -8,6 +8,8 @@ $email = filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL);
 $idade = filter_input(INPUT_POST,'idade', FILTER_SANITIZE_NUMBER_INT);
 $senha = filter_input(INPUT_POST,'senha'); // Obtém o valor da variável 'senha' enviada via POST
 
+    //PARA SETAR OS COOKIES, TEM QUE SER ANTES DOS CÓGIOS QUE FOREM EXIBIR ALGO NA TELA.(ele altera heads)
+
 if($nome && $senha && $email && $idade){ // Verifica se tanto 'nome' quanto 'senha' têm valores definidos
     echo 'NOME: '. $nome."<br/>"; // Se ambos têm valores, imprime o valor de 'nome'
     echo 'EMAIL: '. $email."<br/>";
