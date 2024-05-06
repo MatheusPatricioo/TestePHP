@@ -1,14 +1,13 @@
 <?php
-<<<<<<< HEAD
-require_once('header.php');
+require_once('header.php'); // Inclui o arquivo 'header.php', que pode conter configurações ou outros códigos necessários
 ?>
 
-<form method="POST" action="recebedor.php">
+<form method="POST" action="recebedor.php"> <!-- Formulário com método de envio POST e ação para 'recebedor.php' -->
 
     <label>
         Nome:
         <br/>
-        <input type="text" name="nome" />
+        <input type="text" name="nome" /> <!-- Campo de entrada para o nome do usuário -->
     </label>
     <br />
     <br />
@@ -16,20 +15,11 @@ require_once('header.php');
     <label>
         Senha:
         <br />
-        <input type="password" name="senha" /> 
+        <input type="password" name="senha" /> <!-- Campo de entrada para a senha do usuário (tipo password para ocultar os caracteres) -->
     </label>
     <br />
     <br />
 
-    <input type="submit" value="Enviar" /> 
+    <input type="submit" value="Enviar" /> <!-- Botão de envio do formulário -->
 
 </form>
-=======
-require('config.php');
-require('header.php');
-
-
-echo 'Conteudo do site...<br/>';
-
-echo "NOME DE USUARIO: ".$usuario;
->>>>>>> f02553a731630ba5b16ffcd3cdb4fd8dfe177522
