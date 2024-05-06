@@ -1,4 +1,5 @@
 <?php
+session_start();
 //filter_input: quando ele puxa a variavel(por ex, $nome) e nao acha, ele deixa como false
 //filter_input:se ele achar, poe como true.
 
@@ -13,6 +14,8 @@ if($nome && $senha && $email && $idade){ // Verifica se tanto 'nome' quanto 'sen
     echo 'IDADE: '. $idade."<br/>";
     echo 'SENHA: '. $senha; // e o valor de 'senha'
 } else {
+    $_SESSION['aviso'] = 'Por favor! Preencha os itens corretamente! seu lixo';
+
     header('Location: index.php'); //serve para redirecionar a pag, nesse caso, qnd a pessoa erra os dados, eu retorno pro index.php
                                 //sempre chamar o header location antes de enviar qualquer outra inf, nesse caso por ex, tava dentro do
                                 //if. Se redirecionar tendo enviado outrs inf antes, pode da problema.

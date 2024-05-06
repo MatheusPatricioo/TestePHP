@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>Formulário</title>
 </head>
 <body>
 
-<h2>CABEÇALHO</h2>
+<h2>Formulário</h2>
 
 <p>Lorem ipsum dolor sit amet..</p>
 

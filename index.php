@@ -1,6 +1,15 @@
 <?php
-require_once('header.php'); // Inclui o arquivo 'header.php', que pode conter configurações ou outros códigos necessários
+session_start();
+require('header.php'); // Inclui o arquivo 'header.php', que pode conter configurações ou outros códigos necessários
+
+// Verifica se a variável de sessão 'aviso' foi definida antes de tentar acessá-la
+if(isset($_SESSION['aviso'])) {
+    echo $_SESSION['aviso'];
+    $_SESSION['aviso'] = '';
+}
 ?>
+
+
 
 <form method="POST" action="recebedor.php"> <!-- Formulário com método de envio POST e ação para 'recebedor.php' -->
 
