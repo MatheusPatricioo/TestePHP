@@ -19,7 +19,7 @@ Contribuições são bem-vindas! Se encontrar problemas ou tiver sugestões de m
 
 ## Autor
 
-Este tutorial foi aprendido no curso B7Web.
+Curso B7Web.
 
 ## Licença
 
