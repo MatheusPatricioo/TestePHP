@@ -9,5 +9,5 @@ if($nome && $senha){ // Verifica se tanto 'nome' quanto 'senha' têm valores def
     echo 'NOME: '. $nome."<br/>"; // Se ambos têm valores, imprime o valor de 'nome'
     echo 'SENHA: '. $senha; // e o valor de 'senha'
 } else {
-    echo 'NÃO ENVIOU'; // Se algum dos valores estiver vazio (ou seja, se o usuário não enviou nada), exibe 'NÃO ENVIOU'
+    header('Location: index.php'); //serve para redirecionar a pag, nesse caso, qnd a pessoa erra os dados, eu retorno pro index.php
 }
