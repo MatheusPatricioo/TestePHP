@@ -15,7 +15,7 @@ Um tutorial simples para aprender a criar e processar formulários HTML com PHP 
 
 ## Adicionando uma Imagem
 
-<img src="caminho_para_sua_imagem.jpg" alt="Descrição da imagem">
+<img src="formulario.jpg" alt="Descrição da imagem">
 
 ## Contribuições
 
